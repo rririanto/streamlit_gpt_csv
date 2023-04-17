@@ -32,7 +32,7 @@ def generate_gpt_reponse(gpt_input, max_tokens):
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         max_tokens=max_tokens,
-        temperature=0,
+        temperature=0.5,
         messages=[
             {"role": "user", "content": gpt_input},
         ]
@@ -176,8 +176,8 @@ st.write('')
 st.write('')
 # footer info
 # git hub repo
-st.markdown("The code is available in [GitHub repo](https://github.com/arsentievalex/ask-your-data-gpt)")
-st.markdown("Connect with me on [Twitter](https://twitter.com/alexarsentiev) or [LinkedIn](https://www.linkedin.com/in/oleksandr-arsentiev-5554b3168/). If you like this app, consider [buying me a coffee](https://www.buymeacoffee.com/arsentiev) ☕")
+#st.markdown("The code is available in [GitHub repo](https://github.com/arsentievalex/ask-your-data-gpt)")
+#st.markdown("Connect with me on [Twitter](https://twitter.com/alexarsentiev) or [LinkedIn](https://www.linkedin.com/in/oleksandr-arsentiev-5554b3168/). If you like this app, consider [buying me a coffee](https://www.buymeacoffee.com/arsentiev) ☕")
 
 
 
